@@ -1,0 +1,17 @@
+elementos html ______ bloco 
+|			"quebra a linha" cria novo bloco
+|			"ex:ul, p h1...h6"
+|
+|
+|
+|_______inline__________"não quebra uma nova linha"
+			"ex:strong, em, a, img, ..."
+
+
+
+
+
+
+TABELAS _______armazenar dados em linhas e colunas(grade)
+
+não devem ser utilizadas para layoult ou organização de blocos
