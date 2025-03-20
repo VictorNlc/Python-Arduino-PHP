@@ -1,0 +1,176 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("fundo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    max-height: 80px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    width: 100%;
+}
+
+.formulario {
+    width: 90%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.formulario h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.formulario input,
+.formulario select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    color: white;
+    backdrop-filter: blur(5px);
+}
+
+.data-hora {
+    display: flex;
+    gap: 10px;
+}
+
+.data-hora input {
+    width: 48%;
+}
+
+.formulario button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.formulario button:hover {
+    background-color: #444;
+}
+
+::placeholder {
+    color: #555;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24h-24z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 30px;
+}
+
+/* Estilos para as opções do select */
+.formulario select option {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+    color: #333;
+    padding: 8px;
+    border-bottom: 1px solid #eee; /* Linha sutil entre as opções */
+    font-size: 16px;
+}
+
+.formulario select option:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo mais claro ao passar o mouse */
+}
+
+.formulario select option:checked { /* Opção selecionada */
+    background-color: #333; /* Cor de fundo escura */
+    color: white;
+}
+
+.formulario select option:focus {
+    background-color: #007bff; /* Cor de fundo azul ao focar */
+    color: white;
+    outline: none; /* Remove a borda padrão do foco */
+}
+
+
+/* Estilos para os formulários */
+#cadastro input,
+#login input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+#cadastro button,
+#login button {
+    background-color: #007bff;
+    /* Cor de fundo do botão */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Define a cor do texto para branco nas páginas de login e cadastro */
+#cadastro,
+#login {
+    color: white;
+}
